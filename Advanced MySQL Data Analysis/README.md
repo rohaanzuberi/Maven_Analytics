@@ -68,3 +68,26 @@ WHERE
 ## 📌 Traffic Source Trending
 
 <img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/7.jpeg" width="500" height="400" />
+
+```SQL
+SELECT
+  -- YEAR(created_at) AS year,
+  -- WEEK(created_at) AS week,
+  MIN(DATE(created_at)) AS week_start_date,
+  COUNT(DISTINCT website_session_id) AS sessions
+FROM website_sessions
+WHERE
+  created_at < '2012-05-10'
+  AND utm_source = 'gsearch'
+  AND utm_campaign = 'nonbrand'
+GROUP BY
+  YEAR(created_at),
+  WEEK(created_at);
+```
+<img width="400" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/8.jpeg" width="500" height="200" />
+
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/9.jpeg" width="500" height="400" />
+
+## 📌 Bid Optimization for Paid Traffic
+
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/10.jpeg" width="500" height="400" />
