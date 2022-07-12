@@ -18,7 +18,7 @@ Use SQL to:
 - Analyze and optimize the business’ marketing channels, website, and product portfolio
 
 
-## 📌 Analyzing Traffic Sources
+## 📌 Finding Top Traffic Sources
 
 <img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/1.jpeg" width="500" height="400" />
 
@@ -42,3 +42,6 @@ ORDER BY session DESC;
 The ```NULL``` records indicate traffic that has not been driven by a paid campaign.
 
 <img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/3.jpeg" width="500" height="400" />
+
+## 📌 Traffic Source Conversion Rates
+
