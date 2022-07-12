@@ -38,3 +38,7 @@ ORDER BY session DESC;
 ```
 
 <img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/2.jpeg" width="500" height="200" />
+
+The ```NULL``` records indicate traffic that has not been driven by a paid campaign.
+
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/3.jpeg" width="500" height="400" />
