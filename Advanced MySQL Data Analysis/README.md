@@ -45,3 +45,19 @@ The ```NULL``` records indicate traffic that has not been driven by a paid campa
 
 ## 📌 Traffic Source Conversion Rates
 
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/4.jpeg" width="500" height="400" />
+
+```SQL
+SELECT
+  COUNT(DISTINCT w.website_session_id) AS sessions,
+  COUNT(o.order_id) AS orders,
+  (COUNT(o.order_id) / COUNT(DISTINCT w.website_session_id)) * 100 AS CVR
+FROM website_sessions AS w
+LEFT JOIN orders AS o
+USING (website_session_id)
+WHERE
+  w.created_at < '2012-04-14'
+  AND utm_source = 'gsearch'
+  AND utm_campaign = 'nonbrand';
+```
+
