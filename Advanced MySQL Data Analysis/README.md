@@ -20,4 +20,20 @@ Use SQL to:
 
 ## 📌 Analyzing Traffic Sources
 
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/1.jpeg" width="500" height="400" />
+
+```SQL
+SELECT
+  utm_source,
+  utm_campaign,
+  http_referer,
+  COUNT(DISTINCT website_session_id) AS session
+FROM website_sessions
+WHERE created_at < '2012-04-12'
+GROUP BY
+  utm_source,
+  utm_campaign,
+  http_referer
+ORDER BY session DESC;
+```
 
