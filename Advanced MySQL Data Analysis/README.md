@@ -61,3 +61,6 @@ WHERE
   AND utm_campaign = 'nonbrand';
 ```
 
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/5.jpeg" width="500" height="100" />
+
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/6.jpeg" width="500" height="400" />
