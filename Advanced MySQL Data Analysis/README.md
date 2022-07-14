@@ -115,3 +115,5 @@ ORDER BY CVR DESC;
 
 ## 📌 Trending w/ Granular Segments
 
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/13.jpeg" width="500" height="400" />
+
