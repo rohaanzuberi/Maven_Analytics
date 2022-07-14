@@ -117,3 +117,24 @@ ORDER BY CVR DESC;
 
 <img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/13.jpeg" width="500" height="400" />
 
+```SQL
+SELECT
+  -- YEAR(created_at) AS year,
+  -- WEEK(created_at) AS week,
+  MIN(DATE(created_at)) AS week_start_date,
+  COUNT(DISTINCT CASE WHEN device_type = 'desktop' THEN website_session_id ELSE NULL END) AS desktop_sessions,
+  COUNT(DISTINCT CASE WHEN device_type = 'mobile' THEN website_session_id  ELSE NULL END) AS mobile_sessions
+FROM website_sessions
+WHERE
+  created_at < '2012-06-09'
+  AND created_at >= '2012-04-15'
+  AND utm_source = 'gsearch'
+  AND utm_campaign = 'nonbrand'
+GROUP BY
+  YEAR(created_at),
+  WEEK(created_at);
+```
+
+<img width="400" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/14.jpeg" width="500" height="200" />
+
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/15.jpeg" width="500" height="400" />
