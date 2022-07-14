@@ -17,6 +17,7 @@ Use SQL to:
 - Become the data expert for the company, and the go-to person for mission critical analyses
 - Analyze and optimize the business’ marketing channels, website, and product portfolio
 
+# ✨ Analyzing Traffic Sources
 
 ## 📌 Finding Top Traffic Sources
 
@@ -138,3 +139,7 @@ GROUP BY
 <img width="400" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/14.jpeg" width="500" height="200" />
 
 <img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/15.jpeg" width="500" height="400" />
+
+# ✨ Analyzing Website Performance
+
+
