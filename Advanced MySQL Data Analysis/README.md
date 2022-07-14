@@ -91,3 +91,27 @@ GROUP BY
 ## 📌 Bid Optimization for Paid Traffic
 
 <img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/10.jpeg" width="500" height="400" />
+
+```SQL
+SELECT
+	w.device_type,
+    COUNT(DISTINCT w.website_session_id) AS sessions,
+    COUNT(DISTINCT o.order_id) AS orders,
+    (COUNT(DISTINCT o.order_id)/COUNT(DISTINCT w.website_session_id)) *100 AS CVR
+FROM website_sessions AS w
+LEFT JOIN orders AS o
+ON w.website_session_id = o.website_session_id
+WHERE
+  w.created_at < '2012-05-11'
+  AND utm_source = 'gsearch'
+  AND utm_campaign = 'nonbrand'
+GROUP BY
+  w.device_type
+ORDER BY CVR DESC;
+```
+<img width="400" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/11.jpeg" width="500" height="100" />
+
+<img width="500" alt="image" src="https://github.com/rohaanzuberi/Maven_Analytics/blob/main/Images/12.jpeg" width="500" height="400" />
+
+## 📌 Trending w/ Granular Segments
+
